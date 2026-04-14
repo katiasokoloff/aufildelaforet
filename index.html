@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Au fil de la forêt | Immersions guidées en nature</title>
-    <meta name="description" content="Au fil de la forêt propose des immersions guidées en nature pour ralentir, respirer et se reconnecter à soi-même et au vivant.">
+    <meta name="description" content="Immersions guidées en forêt pour ralentir, respirer et se reconnecter à soi-même et au vivant.">
 
     <style>
         :root {
@@ -19,253 +19,165 @@
             --accent: #6f8f68;
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             margin: 0;
-            font-family: Georgia, "Times New Roman", serif;
+            font-family: Georgia, serif;
             background: var(--sand);
             color: var(--text);
             line-height: 1.7;
         }
 
         .hero {
-            min-height: 78vh;
+            min-height: 75vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             padding: 60px 24px;
-            background:
-                linear-gradient(rgba(46, 67, 52, 0.45), rgba(46, 67, 52, 0.45)),
-                radial-gradient(circle at top, rgba(255,255,255,0.20), rgba(255,255,255,0) 40%),
-                linear-gradient(135deg, #7d9477 0%, #5f775f 35%, #435a47 100%);
+            background: linear-gradient(rgba(46,67,52,0.5), rgba(46,67,52,0.5)),
+                        linear-gradient(135deg,#7d9477,#435a47);
             color: white;
         }
 
-        .hero-content {
-            max-width: 850px;
-        }
-
-        .hero-subtitle {
-            display: inline-block;
-            margin-bottom: 18px;
-            padding: 8px 16px;
-            border: 1px solid rgba(255,255,255,0.35);
-            border-radius: 999px;
-            font-size: 0.95rem;
-            letter-spacing: 0.03em;
-            background: rgba(255,255,255,0.08);
-        }
-
-        h1 {
+        .hero h1 {
+            font-size: 3rem;
             margin: 0;
-            font-size: clamp(2.5rem, 6vw, 4.8rem);
-            line-height: 1.1;
-            font-weight: normal;
         }
 
         .hero p {
-            max-width: 760px;
-            margin: 22px auto 0;
-            font-size: 1.15rem;
-        }
-
-        .hero-actions {
-            margin-top: 34px;
-        }
-
-        .button,
-        .button-secondary {
-            display: inline-block;
-            text-decoration: none;
-            padding: 13px 24px;
-            border-radius: 999px;
-            margin: 8px;
-            transition: 0.2s ease;
-            font-size: 0.98rem;
-        }
-
-        .button {
-            background: white;
-            color: var(--forest-dark);
-        }
-
-        .button:hover {
-            background: var(--mist);
-        }
-
-        .button-secondary {
-            color: white;
-            border: 1px solid rgba(255,255,255,0.45);
-            background: rgba(255,255,255,0.08);
-        }
-
-        .button-secondary:hover {
-            background: rgba(255,255,255,0.16);
+            max-width: 700px;
+            margin: 20px auto;
         }
 
         .container {
-            max-width: 1050px;
-            margin: 0 auto;
-            padding: 70px 22px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
         }
 
-        .intro {
-            max-width: 820px;
-            margin: 0 auto 60px;
-            text-align: center;
-            color: var(--soft);
-            font-size: 1.08rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin-bottom: 28px;
-        }
-
-        .card {
-            background: var(--card);
-            border-radius: 18px;
+        .section {
+            background: white;
             padding: 30px;
-            box-shadow: 0 10px 28px rgba(40, 55, 40, 0.08);
+            margin-bottom: 25px;
+            border-radius: 12px;
         }
 
-        .card h2 {
-            margin-top: 0;
+        h2 {
             color: var(--forest);
-            font-size: 1.45rem;
-            font-weight: normal;
-        }
-
-        .full-card {
-            background: var(--card);
-            border-radius: 18px;
-            padding: 34px;
-            box-shadow: 0 10px 28px rgba(40, 55, 40, 0.08);
-            margin-top: 24px;
-        }
-
-        .full-card h2 {
             margin-top: 0;
-            color: var(--forest);
-            font-size: 1.55rem;
-            font-weight: normal;
         }
 
-        .dates p {
-            margin: 10px 0;
-        }
-
-        .soft-box {
-            margin-top: 18px;
-            background: var(--mist);
-            border-left: 4px solid var(--accent);
-            padding: 16px 18px;
-            border-radius: 10px;
-            color: var(--text);
-        }
-
-        .contact-box {
-            text-align: center;
-        }
-
-        .contact-box p {
-            max-width: 650px;
-            margin: 0 auto 18px;
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 999px;
+            background: var(--forest);
+            color: white;
+            text-decoration: none;
         }
 
         footer {
             text-align: center;
-            padding: 36px 20px 50px;
+            padding: 30px;
             color: var(--soft);
-            font-size: 0.95rem;
-        }
-
-        @media (max-width: 700px) {
-            .hero {
-                min-height: 68vh;
-            }
-
-            .container {
-                padding-top: 50px;
-            }
-
-            .card,
-            .full-card {
-                padding: 24px;
-            }
         }
     </style>
 </head>
+
 <body>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-subtitle">Immersions guidées en nature</div>
-            <h1>Au fil de la forêt</h1>
-            <p>
-                J’ai été formée à analyser le vivant. Aujourd’hui, je vous invite à le ressentir.
-            </p>
-            <div class="hero-actions">
-                <a class="button" href="#contact">Me contacter</a>
-                <a class="button-secondary" href="#dates">Voir les prochaines dates</a>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+    <div>
+        <h1>Au fil de la forêt</h1>
+        <p>J’ai été formée à analyser le vivant. Aujourd’hui, je vous invite à le ressentir.</p>
+    </div>
+</section>
 
-    <main class="container">
-        <div class="intro">
-            Une approche sensible et ancrée, à la rencontre de la forêt, de ses sensations et de ce qui en nous cherche à ralentir.
-        </div>
+<div class="container">
 
-        <div class="grid">
-            <section class="card">
-                <h2>À propos</h2>
-                <p>
-                    Formée en toxicologie et en analyse du risque à la santé, j’ai d’abord appris à comprendre le vivant à travers la science et les données. C’est toutefois sur le terrain, au contact des personnes et de la nature, que j’ai développé une écoute plus fine de ce qui soutient réellement notre équilibre.
-                </p>
-            </section>
+<div class="section">
+    <p>
+        Une approche sensible et ancrée, à la rencontre de la forêt, des sensations qu’elle nous fait vivre et de ce qui, en nous, cherche à ralentir.
+    </p>
+</div>
 
-            <section class="card">
-                <h2>L’esprit des séances</h2>
-                <p>
-                    Le Shinrin Yoku s’est inscrit naturellement dans cette continuité : une approche concrète, sensorielle et profondément apaisante, qui invite à ralentir, respirer, observer et ressentir sans attente de performance.
-                </p>
-            </section>
-        </div>
+<div class="section">
+    <h2>À propos</h2>
+    <p>
+        Formée en sciences de la santé et de l’environnement, j’ai d’abord appris à comprendre le vivant à travers les mécanismes et les données. C’est toutefois sur le terrain, au contact des personnes et de la nature, que j’ai développé une écoute plus fine de ce qui soutient réellement notre équilibre.
+    </p>
+</div>
 
-        <section class="full-card">
-            <h2>Immersions en nature</h2>
-            <p>
-                Je propose des expériences guidées en forêt pour se déposer, affiner ses perceptions et renouer avec soi-même ainsi qu’avec le vivant. Chaque séance suit un rythme simple, doux et accessible, dans un esprit de présence, de lenteur et d’écoute.
-            </p>
-            <div class="soft-box">
-                Un espace pour ralentir, respirer, percevoir autrement et retrouver son intérieur.
-            </div>
-        </section>
+<div class="section">
+    <h2>L’esprit des séances</h2>
+    <p>
+        Le Shinrin Yoku s’est inscrit naturellement dans cette continuité : une approche concrète, sensorielle et profondément apaisante, qui invite à ralentir, respirer, observer et ressentir sans attente de performance.
+    </p>
+</div>
 
-        <section class="full-card dates" id="dates">
-            <h2>Prochaines dates</h2>
-            <p>Dates à venir — la programmation sera affichée prochainement.</p>
-        </section>
+<div class="section">
+    <h2>Immersions en nature</h2>
+    <p>
+        Je propose des expériences guidées en forêt pour se déposer, affiner ses perceptions et renouer avec soi-même ainsi qu’avec le vivant.
+    </p>
+    <p>
+        Ces immersions s’adressent à toute personne souhaitant ralentir, prendre un temps pour soi ou retrouver un contact plus direct avec la nature, sans prérequis.
+    </p>
+    <p>
+        Chaque séance suit un rythme simple, doux et accessible, dans un esprit de présence, de lenteur et d’écoute.
+    </p>
+    <p><em>Un espace pour ralentir, respirer, percevoir autrement et retrouver son intérieur.</em></p>
+</div>
 
-        <section class="full-card contact-box" id="contact">
-            <h2>Contact</h2>
-            <p>
-                Pour une question, une réservation ou l’organisation d’une immersion privée, écrivez-moi.
-            </p>
-            <a class="button" href="mailto:katia@aufildelaforet.com">katia@aufildelaforet.com</a>
-        </section>
-    </main>
+<div class="section">
+    <h2>Comment se déroule une séance</h2>
+    <p>
+        Accueil — Marche lente, silencieuse et guidée, jalonnée d’invitations simples pour éveiller les sens et entrer en contact avec la nature autrement — Retour.
+    </p>
+</div>
 
-    <footer>
-        © Au fil de la forêt
-    </footer>
+<div class="section">
+    <h2>Prochaines dates</h2>
+    <p>
+        Dates à venir — la programmation sera affichée prochainement.<br>
+        Lieux — Montréal, Montérégie, Estrie, Laurentides
+    </p>
+</div>
+
+<div class="section">
+    <p>
+        Pour en savoir plus sur le Shinrin Yoku, ses bienfaits et les formations pour devenir guide :
+    </p>
+    <p>
+        <a href="https://www.agsy.ca" target="_blank">agsy.ca</a><br>
+        <a href="https://www.shinrinyokudo.org" target="_blank">shinrinyokudo.org</a>
+    </p>
+</div>
+
+<div class="section contact-box" id="contact">
+    <h2>Contact</h2>
+    <p>
+        Pour une question, une réservation ou simplement pour échanger, écrivez-moi.
+    </p>
+    <a class="button" id="email-link" href="#">Me contacter par courriel</a>
+</div>
+
+</div>
+
+<footer>
+    © Au fil de la forêt<br>
+    Membre de l’Association des Guides Shinrin Yoku (AGSY)
+</footer>
+
+<script>
+    const user = "katia";
+    const domain = "aufildelaforet.com";
+    const email = user + "@" + domain;
+
+    const emailLink = document.getElementById("email-link");
+    emailLink.href = "mailto:" + email;
+    emailLink.textContent = email;
+</script>
 
 </body>
 </html>
